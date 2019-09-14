@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-
-
-
-
-=======
 Taller BIT Institute DOM(Document Objetc Model)
 ===============================================
 

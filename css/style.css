@@ -9,6 +9,10 @@
     background: rgba(0, 0, 0, 0.507);
 
 }
+body{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+}
 
 
 
@@ -43,8 +47,13 @@ button{
     padding: 5px;
     margin: 10px;
     width: 30%;
+    background: rgb(59, 73, 37);
+    color: aliceblue;
     
 }
 .grid-container >.formulario > p{
     margin-top: 15px;
+}
+p{
+    font-weight: bold;
 }

@@ -11,36 +11,27 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="img/logo.png" alt="">
+    <div class="main-container">
+        <div class="cabecera">
+            Logo
         </div>
+
+
+
         <div class="grid-container">
-            <div class="content">
-                <p>REGISTRATE</p>
-                <p>¡ES GRATIS!</p>
-                <div class="formulario">
-                    <form action="">
-                        <div class="dosporuno">
-                            <input class="uno" id="nombre" type="text" placeholder="Nombre" width="15px" required>
-                            <input class="uno" id="apellido" type="text" placeholder="Apellido" required>
-                        </div>
-
-                        <input type="email" placeholder="Correo" required>
-                        <input type="password" placeholder="Contraseña" required>
-                        <input type="tel" placeholder="Celular" pattern="[0-9]{10}" required><br>
-                        <button id="btn1">Registrarse</button>
-                    </form>
-
-                </div>
-
-
+            <div class="formulario">
+                    <p>REGISTRATE</p>
+                    <p> ¡ES GRATIS!</p>
+                <form onsubmit="return validaCampos()" action="resultado.html" target="_blank">
+                    <input type="text" class="uno" id="nombre" placeholder="Nombre">
+                    <input type="text" class="uno" id="apellido" placeholder="Apellido">
+                    <input type=" email" class="dos" id="correo" placeholder="Correo">
+                    <input type="password" class="dos" id="contraseña" placeholder="Contraseña">
+                    <input type="tel" class="dos" id="telefono" placeholder="Celular"><br>
+                    <input class="btn" type="submit" value="Registrarse">
+                </form>
             </div>
-
-
-
         </div>
-
     </div>
     <script src="js/script.js"></script>
 

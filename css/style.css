@@ -1,70 +1,50 @@
 *{
-    padding: 0;
     margin: 0;
-}
-body{
-    background: gray;
-}
-
-.logo{
-    background:rgba(0, 0, 0, 0.568);  
-    height: 6em;
-    position: relative;
-    
-}
-.logo > img{
-    height: inherit;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-/* 10, 1fr */
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-   /*  grid-template-rows: repeat(10, auto); */
-    padding: 2%;
-    text-align: center;
-    
-}
-.content{
-    display: grid;
-    background: violet;
-    grid-column: 6/10;
-    padding: 5%;
-}
-form{
-    padding: 15px 0 5px 0; 
-}
-button{
-    margin: 15px;
-    width: 50%;
-    padding: 5px;
-}
-.uno{
-    width: 38%;
-    
-}
-input{
-    padding: 10px;
-    margin: 5px 0;
-    
-}
-.formulario{
-    border: 1px solid black;
-    margin: 5px 40px;
     padding: 0;
 }
-.dosporuno{
-    float: left;
-    padding: 5px;
-    position: inherit;
+
+.cabecera{
+    padding: 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.507);
 
 }
-@media only screen and (max-width: 1000px) {
-    .content { 
-        grid-column: 1/6;
-    }
- 
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:  50% 40% 10%;
+   /*  grid-template-rows: 50px 200px 200px 100px; */
+   margin-top: 3%;
+    
   }
+.formulario {
+    background-color: gray;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    text-align: center;
+    color: white;    
+}
+
+.uno{
+    width: 30%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+.dos{
+    width: 61%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+.btn{
+    padding: 5px;
+    margin: 10px;
+    width: 30%;
+    
+}
+.grid-container >.formulario > p{
+    margin-top: 15px;
+}

@@ -18,17 +18,17 @@
 
 
 
-        <div class="grid-container">
+        <div class="grid-container" >
             <div class="formulario">
-                    <p>REGISTRATE</p>
-                    <p> ¡ES GRATIS!</p>
-                <form onsubmit="return validaCampos()" action="resultado.html" target="_blank">
-                    <input type="text" class="uno" id="nombre" placeholder="Nombre">
-                    <input type="text" class="uno" id="apellido" placeholder="Apellido">
-                    <input type=" email" class="dos" id="correo" placeholder="Correo">
-                    <input type="password" class="dos" id="contraseña" placeholder="Contraseña">
-                    <input type="tel" class="dos" id="telefono" placeholder="Celular"><br>
-                    <input class="btn" type="submit" value="Registrarse">
+                <p>REGISTRATE</p>
+                <p> ¡ES GRATIS!</p>
+                <form action="pages/perfil.html" id="form" method="POST" >
+                    <input type="text" class="uno" id="nombre" placeholder="Nombre" required>
+                    <input type="text" class="uno" id="apellido" placeholder="Apellido" required>
+                    <input type=" email" class="dos"  placeholder="Correo" required>
+                    <input type="password" class="dos" placeholder="Contraseña" required>
+                    <input type="tel" class="dos" placeholder="Celular" pattern="[0-9]{10}" required><br>
+                    <button id="btn1" onclick="registrar()">Registrarse</button>
                 </form>
             </div>
         </div>

@@ -1,14 +1,8 @@
 var boton = document.getElementById("btn1");
 
+let nombre = document.getElementById("nombre").value;
+let usuario = localStorage.setItem("name", nombre);
 
-
-
- function registrar() {
-    let nombre = document.getElementById("nombre").value; 
-    let usuario = localStorage.setItem("name", nombre);
-    alert("Registro exitoso: " + nombre);
-    location.href="pages/perfil.html";    
-} 
 
 
 

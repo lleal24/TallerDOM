@@ -91,3 +91,6 @@ button{
     color: aliceblue;
     
 }
+li:hover{
+    text-decoration: line-through;
+}

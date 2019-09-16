@@ -10,16 +10,9 @@ p.innerHTML = usuarioTemp;
 
 
 function agregarTarea() { 
-    let tarea = document.getElementById("tarea").value;
-    localStorage.setItem("task", tarea); //guardar tarea en localstorage
-    tareas.push(tarea); //agregar tarea a un array
-    let lista = document.createElement("li");
-    lista.textContent = tarea;
-    lista.addEventListener('click', elimiarTarea);
-    listaTarea.appendChild(lista);
-    
-}
-function elimiarTarea() {
-    listaTarea.removeChild(listaTarea.lastChild);
-    
+    let tarea = document.getElementById("tarea").value; /* obtiene el valor del input */
+    let lista = document.createElement("li"); /* crea elemento tipo li */
+    lista.textContent = tarea;/*  el elelemto tipo li toma el valor de la tarea */
+    lista.addEventListener('click', lista.remove); /* se agrega un evento, eliminar el elemento al click */
+    listaTarea.appendChild(lista);   /* se agrega el hijo al padre */
 }
